@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class CarController : MonoBehaviour
 {
@@ -21,6 +22,8 @@ public class CarController : MonoBehaviour
 
     public List<TrailRenderer> trails;
     public MeshRenderer carMat;
+
+    public int lap = 0;
 
     public enum State
     {
@@ -52,6 +55,12 @@ public class CarController : MonoBehaviour
             case State.Normal:
                 HandleMovement();
                 break;
+        }
+
+        if(lap >= 7)
+        {
+            Scene scene = SceneManager.GetActiveScene(); 
+            SceneManager.LoadScene(scene.name);
         }
     }
 
