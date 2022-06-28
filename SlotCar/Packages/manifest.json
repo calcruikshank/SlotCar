@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.lastgameboard.unity.plugin": "1.0.6",
     "com.unity.collab-proxy": "1.15.7",
     "com.unity.ide.rider": "3.0.9",
     "com.unity.ide.visualstudio": "2.0.12",
@@ -42,5 +43,14 @@
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0"
-  }
+  },
+  "scopedRegistries": [
+    {
+      "name": "LastGameboard",
+      "url": "https://lastgameboard.jfrog.io/artifactory/api/npm/unity-plugin",
+      "scopes": [
+        "com.lastgameboard.unity"
+      ]
+    }
+  ]
 }
