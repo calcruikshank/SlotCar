@@ -81,8 +81,8 @@ public class ObstacleController : Gameboard.Utilities.Singleton<ObstacleControll
                     newBounds.Encapsulate(o.contourWorldVectors3D[i]);
                 }
                 obstacle.Collider.center = o.sceneWorldPosition;
-                obstacle.Collider.radius = UnityEngine.Mathf.Max(newBounds.size.x, newBounds.size.z);
-                obstacle.Collider.radius = newBounds.size.y;
+                obstacle.Collider.radius = UnityEngine.Mathf.Max(newBounds.size.x, newBounds.size.y);
+                obstacle.Collider.height = newBounds.size.z;
             }
             
         });
