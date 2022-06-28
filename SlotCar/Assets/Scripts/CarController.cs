@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class CarController : MonoBehaviour
 {
     public State state;
+    Vector3 inputMovement;
     public enum State
     {
         Normal
@@ -39,12 +40,6 @@ public class CarController : MonoBehaviour
     void OnMove(InputValue value)
     {
         //inputMovement = value.Get<Vector2>();
-        //lookDirection = value.Get<Vector2>();
-    }
-
-    void OnLook(InputValue value)
-    {
-       // directionToShoot = value.Get<Vector2>();
     }
 
     void OnFire()
@@ -58,4 +53,4 @@ public class CarController : MonoBehaviour
       //  fire = false;
     }
 }
-}
+
