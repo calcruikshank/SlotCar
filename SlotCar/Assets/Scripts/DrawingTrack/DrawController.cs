@@ -8,8 +8,9 @@ public class DrawController : MonoBehaviour
 {
 
     public GameObject RailPrefab;
+    public GameObject RailParent;
     bool dragging = false;
-    float movedeltatospawn = 110f;
+    public float MoveDistancetospawn = 110f;
 
     Vector2 lastSpawnPoint;
     Camera main;
@@ -29,7 +30,7 @@ public class DrawController : MonoBehaviour
 
             float distance = Vector2.Distance(mousePos, lastSpawnPoint);
 
-            if(distance >= movedeltatospawn)
+            if(distance >= MoveDistancetospawn)
             {
                 SpawnRail();
                 distance = 0;
@@ -47,7 +48,7 @@ public class DrawController : MonoBehaviour
         var angle = (Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg)+90;
         rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
-        Instantiate(RailPrefab, spawnPosition, rotation,null);
+        Instantiate(RailPrefab, spawnPosition, rotation,RailParent.transform);
         lastSpawnPoint = mousePos;
     }
 
