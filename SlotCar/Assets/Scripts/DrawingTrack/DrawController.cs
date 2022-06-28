@@ -19,7 +19,7 @@ public class DrawController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        main = Camera.main;
+        main = Camera.main; SpawnDepth = Camera.main.transform.parent.transform.position.y - 1;
     }
 
 
