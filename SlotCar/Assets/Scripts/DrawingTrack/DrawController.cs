@@ -11,6 +11,7 @@ public class DrawController : MonoBehaviour
     public GameObject RailParent;
     bool dragging = false;
     public float MoveDistancetospawn = 110f;
+    public float SpawnDepth = 20;
 
     Vector2 lastSpawnPoint;
     Camera main;
@@ -39,14 +40,22 @@ public class DrawController : MonoBehaviour
 
     }
 
+    public void ClearScreen()
+    {
+        for(int i = 0; i< RailParent.transform.childCount; i++)
+        {
+            Destroy(RailParent.transform.GetChild(i).gameObject);
+        }
+    }
+
     private void SpawnRail()
     {
 
-        Vector3 spawnPosition = main.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y,10));
+        Vector3 spawnPosition = main.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y,SpawnDepth));
         Quaternion rotation;
         var dir = lastSpawnPoint - mousePos;
         var angle = (Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg)+90;
-        rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        rotation = Quaternion.Euler(0, -angle, 0);
 
         Instantiate(RailPrefab, spawnPosition, rotation,RailParent.transform);
         lastSpawnPoint = mousePos;
