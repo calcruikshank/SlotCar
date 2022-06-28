@@ -240,6 +240,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2062542516291830299, guid: 627b166150d60ed4db10cd672db28bf2,
+        type: 3}
+      propertyPath: SpawnDepth
+      value: 99
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062542516291830299, guid: 627b166150d60ed4db10cd672db28bf2,
+        type: 3}
+      propertyPath: MoveDistancetospawn
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 2062542516291830300, guid: 627b166150d60ed4db10cd672db28bf2,
         type: 3}
       propertyPath: m_RootOrder
@@ -443,7 +453,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 658017809}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

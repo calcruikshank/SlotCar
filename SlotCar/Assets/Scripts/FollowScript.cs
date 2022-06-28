@@ -63,7 +63,14 @@ public class FollowScript : MonoBehaviour
         if (players.Count > 0)
         {
             pointToFollow = pointToFollow / (players.Count + 1);
-            this.transform.position = Vector3.MoveTowards(this.transform.position, new Vector3(pointToFollow.x, furthestDistanceBetweenPlayer + 30, pointToFollow.z), 50 * Time.deltaTime);
+            if (furthestDistanceBetweenPlayer > 50)
+            {
+                this.transform.position = Vector3.MoveTowards(this.transform.position, new Vector3(pointToFollow.x, furthestDistanceBetweenPlayer + 30, pointToFollow.z), 50 * Time.deltaTime);
+            }
+            else
+            {
+                this.transform.position = Vector3.MoveTowards(this.transform.position, new Vector3(pointToFollow.x, pointToFollow.y + 60, pointToFollow.z), 50 * Time.deltaTime);
+            }
 
         }
 
