@@ -1,0 +1,95 @@
+{
+    "m_SelectedDeviceId": "10.1.10.9:5555",
+    "m_SelectedPackage": {
+        "deviceId": "10.1.10.9:5555",
+        "name": "com.lastgameboard.gameboardlauncher",
+        "processId": 3992,
+        "exited": false
+    },
+    "m_SelectedPriority": 0,
+    "m_KnownPackagesForSerialization": [
+        {
+            "deviceId": "10.1.10.9:5555",
+            "name": "com.gameboard.poker",
+            "processId": 5161,
+            "exited": true
+        },
+        {
+            "deviceId": "10.1.10.9:5555",
+            "name": "com.nomadgames.mysticvale",
+            "processId": 5376,
+            "exited": true
+        },
+        {
+            "deviceId": "10.1.10.9:5555",
+            "name": "com.nomadgames.mysticvale",
+            "processId": 5779,
+            "exited": true
+        },
+        {
+            "deviceId": "10.1.10.9:5555",
+            "name": "com.nomadgames.mysticvale",
+            "processId": 6183,
+            "exited": true
+        },
+        {
+            "deviceId": "10.1.10.9:5555",
+            "name": "com.lastgameboard.gameboardlauncher",
+            "processId": 3992,
+            "exited": false
+        }
+    ],
+    "m_Tags": {
+        "m_Entries": [
+            {
+                "m_Name": "Filter by all listed tags",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "No Filter",
+                "m_Selected": true
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Tag Control...",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Unity",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "CRASH",
+                "m_Selected": false
+            }
+        ]
+    },
+    "m_MemoryViewerState": {
+        "MemoryWindowHeight": 300.0,
+        "MemoryWindowWidth": 170.0,
+        "MemoryTypeEnabled": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+        ],
+        "MemoryGroup": 2,
+        "Behavior": 0
+    },
+    "m_Filter": "",
+    "m_FilterIsRegularExpression": false,
+    "m_SymbolPaths": []
+}

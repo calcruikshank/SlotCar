@@ -32,7 +32,7 @@ public class FollowScript : MonoBehaviour
         if (players.Count == 1)
         {
             pointToFollow = players[0].transform.position;
-            this.transform.position = Vector3.MoveTowards(this.transform.position, new Vector3(pointToFollow.x, pointToFollow.y + 50, pointToFollow.z), 50 * Time.deltaTime);
+            this.transform.position = Vector3.MoveTowards(this.transform.position, new Vector3(pointToFollow.x, pointToFollow.y + 60, pointToFollow.z), 50 * Time.deltaTime);
             return;
         }
         foreach (Transform player in players)

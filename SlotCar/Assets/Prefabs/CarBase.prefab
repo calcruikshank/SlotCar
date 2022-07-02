@@ -2186,6 +2186,7 @@ MonoBehaviour:
   - {fileID: 6796745054533220562}
   - {fileID: 3850692501738814137}
   carMat: {fileID: 1700364050183516940}
+  lap: 0
 --- !u!114 &4398270891754578682
 MonoBehaviour:
   m_ObjectHideFlags: 0

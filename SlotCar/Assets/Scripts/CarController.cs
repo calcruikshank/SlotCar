@@ -68,7 +68,6 @@ public class CarController : MonoBehaviour
     {
         //carVisual.transform.forward = carVisualStartingRotation;
         turnValue = inputMovement.x;
-
         Vector3 carRot = carVisual.transform.eulerAngles;
         carVisual.transform.rotation = Quaternion.Euler(carRot.x, carRot.y + (turnValue * turnSpeed * rb.velocity.normalized.magnitude), carRot.z);
 
@@ -128,6 +127,12 @@ public class CarController : MonoBehaviour
         {
             trail.emitting = on;
         }
+    }
+    void OnRestart()
+    {
+
+        Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
     }
 }
 
